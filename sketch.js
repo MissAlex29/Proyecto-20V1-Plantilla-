@@ -1,37 +1,51 @@
 var canvas,bg;
-var together;
-var tom, tomImg1,tomImg2;
-var jerry, jerryImg1,jerryImg2;
+var cat, catImg1,catImg2,catImg3;
+var mouse, mouseImg1,mouseImg2,mouseImg3;
 
 function preload() {
-    bg = loadImage("images/garden.png");
-    tomImg1= loadAnimation("images/tomOne.png");
-    tomImg2=loadAnimation("images/tomTwo.png","images/tomThree.png");
-    tomImg3= loadAnimation("images/tomFour.png");
-    jerryImg1=loadAnimation("images/jerryOne.png");
-    jerryImg2= loadAnimation("images/jerryTwo.png","images/jerryThree.png");
-    jerryImg3=loadAnimation("images/jerryFour.png");
+    //Imagen de fondo 
+    bg = loadImage("Images/garden.png");
 
+    //Gato acostado
+    
+    //Gato caminando
+    
+    //Gato sentado
+    
+
+    //Ratón buscando
+    
+    //Ratón burlandose 
+    
+    //Ratón con queso 
+    
 }
 
 function setup(){
-    canvas = createCanvas(1000,800);
-
+    createCanvas(1000,800);
+    
+    //Objeto - gato
+    cat = createSprite(870,600);
+    
+     //Objeto - ratón
+    mouse = createSprite(200,600);
     
 
 }
 
 function draw() {
-
+    //Fondo de pantalla 
     background(bg);
 
+    //Cóndición para detactar colisión de los objetos 
     
 
-    
+    drawSprites();
 }
 
 
 function keyPressed(){
-
+    //Condición movimiento de gato - raton burlandose 
+    
     
 }
